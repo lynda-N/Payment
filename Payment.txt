@@ -1,0 +1,83 @@
+Object Oriented Programming
+
+OOP: Object Oriatented programming is the act of instrcuting that computer on what to do using an object approach
+
+Object Modelling
+Object Modelling is a way of describing or interpreting a thing(object) in an using an object oriented approach. Every object in java must be described using the itemized features below
+1. Access Modifier
+2. Variable Name
+3. Data Types.
+ 
+Access Modifier
+Access modifier is the means by which the object can be reached, connect or contacted. An object can be accessed using the following ways public, private,protected and direct(not sure of this please)
+ 
+Variable Name
+Variable name like the name implies is the name of the object we want to have access to.
+ 
+Data Type:
+This is the way in which the variable can be express.Data type can be divided into two and they are single data type and double data type.
+ 
+Single Data
+Types can be divided into two also and they are Text and Numbers.
+a.Text
+  When text is been use as a data type in java it can be represented as string.
+b.Numbers
+  Numbers can be divided into two and they are whole numbers and decimals
+i. Whole numbers can be divided into three and they are
+  2billion: When numbers that falls in the range of 2B this data type is used, it is represented as int in java. For example 0-2billon
+  Greater than 2billion: When numbers that falls in the range 2billon and above (2^64), this data type can be used and it is represent as long in java
+  Infinity: When we use uncountable numbers,then infinity data type also known as bigNumber can be use to represent it in java
+
+ii.Decimal Numbers: Decimal numbers can be divided into two and they are
+   Numbers in 7decimal places also known as float in java
+   Numbers in 15decimal places also known as double in java
+
+Example: Model a payment platform
+
+public class Payment {
+
+private long cardNumber;
+private int cvv;
+private String nameOnCard;
+private float amount;
+private String email;
+
+}
+
+Decomposition Approach.
+This is the act of breaking each features of the app to basic functionality using the user story as a guide. For instance the payment app can be decompose to the following functionalities "User, Card and Money".
+
+public class Card {
+    private int cvv;
+private long cardNumber;
+}
+
+public class Money{
+    private float amount;
+}
+
+public class User {
+    private String fullName;
+    private String email;
+}
+
+
+Single Responsiblity
+This is the next phase after decomposition.
+When written this code the caption of each decomposed functions as the data type, hence once it is been called it referes to our already existing datas
+Functions that are related to each decomposed features are been grouped together based on their functionlities.
+Once the decompose features have be grouped and code written seperately, all the features will be combined together using the command prompt. The result of the combination is know as byte code.
+Example
+public class Payment {
+
+private Card card;
+private Money money;
+private User user;
+
+}
+ Importance of Single Responsibility
+1. Easy modelling of object
+2. Code/Object Reuseability
+3. Code/Object Maintenance
+4. It makes the code ease to read and understandn 
+
